@@ -1,0 +1,125 @@
+.header__checkbox, .header__label {
+	display: none;
+}
+
+.header {
+	position: relative;
+	text-align: center;
+	background: #1AAFBA;
+}
+
+.header__menu {
+	cursor: pointer;
+	font-size: 25px;
+	width: 100%;
+}
+.header__menu__link {
+	text-decoration: none;	
+}
+
+.header__menu__link:hover {
+	text-decoration: underline;
+}
+
+
+@media (max-width:599px) {
+
+.header__checkbox {
+	display: none;
+}
+
+.header {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	height: 40px; 
+	background: #1AAFBA;
+}
+
+.header__menu {
+	font-size: 0;
+	max-height: 0;
+    overflow: hidden;
+    transform: translateY(100%)
+}
+
+.header__menu__link {
+	color: #000;
+	display: block;
+	text-decoration: none;
+    width: 100%;
+}
+
+.header__label {
+	position: absolute;
+	display: block;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+.burger {
+	position: absolute;
+	background: #fff;
+	top: 10px;
+	right: 5px;
+	width: 40px;
+	height: 3px;
+}
+
+.second-line, .third-line {
+	top: 20px;
+}
+
+.fourth-line {
+	top: 30px;
+}
+
+.header__checkbox:checked ~ .header__menu {
+	width: 100%;
+    max-height: 300px;
+    font-size: 25px;
+}
+}
+
+@media (max-width:400px) {
+    .section {
+     font-size: 16px;
+    }
+  }
+  
+  @media (min-width:401px) and (max-width:599px) {
+    .section  {
+     font-size: 18px;
+    }
+  }
+  
+  @media (min-width:600px) and (max-width:767px) {
+    
+    .section  {
+     font-size: 20px;
+    }
+  }
+  
+  @media (min-width:768px) and (max-width:950px) {
+    
+    .section  {
+     font-size: 24px;
+    }
+  }
+  
+  @media (min-width:951px) and (max-width:1050px) {
+    
+    .section  {
+     font-size: 32px;
+    }
+  }
+  
+  @media (min-width:1051px) {
+    
+    .section  {
+     font-size: 36px;
+    }
+  }
+}
